@@ -139,10 +139,4 @@ Stream branches for bigger parallel work:
 - `stream/model`
 - `stream/ui`
 
-## Team for API/UI
-
-| Name | Stream |
-|---|---|
-| Daisy | API/UI |
-| Melissa | UI/API |
 
