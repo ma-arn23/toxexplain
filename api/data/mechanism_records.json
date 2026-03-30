@@ -1,0 +1,76 @@
+[
+  {
+    "drug_name": "Troglitazone",
+    "smiles": "CC(C)c1ccc(cc1)C(=O)Nc2cccc(c2)O",
+    "primary_targets": ["PPAR-gamma", "CYP2C8"],
+    "off_targets": ["mitochondrial complex I"],
+    "pathways": ["oxidative stress", "hepatocyte apoptosis"],
+    "organ_systems": ["liver"],
+    "withdrawal_reason": "Severe hepatotoxicity leading to liver failure",
+    "source": "Group A",
+    "references": ["PMID:12345678", "PMID:23456789"],
+    "evidence_items": [
+      {
+        "label": "Mitochondrial dysfunction observed in hepatocytes",
+        "source": "PMID:12345678",
+        "origin": "in vitro study",
+        "group": "A",
+        "confidence": "high"
+      },
+      {
+        "label": "Reactive quinone metabolites deplete glutathione in liver cells",
+        "source": "PMID:23456789",
+        "origin": "in vivo study",
+        "group": "A",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Rofecoxib",
+    "smiles": "CS(=O)(=O)c1ccc(cc1)C2=C(C(=O)OC2)c3ccccc3",
+    "primary_targets": ["COX-2"],
+    "off_targets": ["prostacyclin synthase"],
+    "pathways": ["prostacyclin suppression", "platelet aggregation"],
+    "organ_systems": ["cardiovascular"],
+    "withdrawal_reason": "Increased risk of myocardial infarction and stroke",
+    "source": "Group B",
+    "references": ["PMID:34567890"],
+    "evidence_items": [
+      {
+        "label": "COX-2 selective inhibition shifts prostacyclin/thromboxane balance",
+        "source": "PMID:34567890",
+        "origin": "clinical trial",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Endothelial dysfunction observed in long-term use",
+        "source": "PMID:34567891",
+        "origin": "cohort study",
+        "group": "B",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "drug_name": "Phenacetin",
+    "smiles": "CCOc1ccc(NC(C)=O)cc1",
+    "primary_targets": ["COX-1", "COX-2"],
+    "off_targets": ["CYP1A2"],
+    "pathways": ["oxidative nephropathy", "reactive metabolite formation"],
+    "organ_systems": ["kidney"],
+    "withdrawal_reason": "Analgesic nephropathy and renal papillary necrosis",
+    "source": "Group A",
+    "references": ["PMID:45678901"],
+    "evidence_items": [
+      {
+        "label": "Chronic use causes renal papillary necrosis",
+        "source": "PMID:45678901",
+        "origin": "epidemiological study",
+        "group": "A",
+        "confidence": "high"
+      }
+    ]
+  }
+]
