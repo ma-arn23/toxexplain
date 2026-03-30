@@ -1,0 +1,36 @@
+# Stream 1 — Centralised Toxicity Database
+
+This folder contains the pipeline for ingesting, normalising, and exporting the centralised toxicity database.
+
+## What it does
+
+- Ingests raw toxicity data from public sources (ChEMBL, PubChem, DrugBank, etc.)
+- Normalises inconsistent file types and variable names into a unified format
+- Exports a clean database used by both the model (Stream 2) and the UI (Stream 3)
+
+## Data sources
+
+See `sources/sources.md` for the full list of databases used.
+
+## Running the pipeline
+
+```bash
+pip install -r requirements.txt
+
+# Step 1: Ingest raw data
+python pipeline/ingest.py
+
+# Step 2: Normalise + unify
+python pipeline/normalise.py
+
+# Step 3: Export
+python pipeline/export.py
+```
+
+Outputs are written to `outputs/` — this folder is not committed to git (too large). Add your output files locally after running.
+
+## Stats
+
+- ~1.3 million bioactive molecules ingested
+- Majority unlabelled (used for self-supervised pretraining in Stream 2)
+- Labelled subset used for fine-tuning and evaluation
