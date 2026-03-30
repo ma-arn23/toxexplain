@@ -1,0 +1,68 @@
+# Stream 2 — AI Toxicity Prediction Models
+
+This folder contains the deep learning models for toxicity prediction.
+
+## Approach
+
+Two complementary self-supervised approaches are explored:
+
+**Semi-supervised learning** — learns from large amounts of unlabelled molecular data, then fine-tunes on labelled toxicity data.
+
+**Contrastive learning** — learns meaningful molecular representations by contrasting similar and dissimilar compounds, then fine-tunes on labelled data.
+
+Both models are multi-modal: they learn from chemical structures (SMILES) and biological assay data.
+
+## Current results
+
+- 76% accuracy on test data (preliminary)
+- Scaffold-based splitting used to prevent data leakage
+- Further optimisation in progress
+
+## Folder structure
+
+```
+model/
+├── pretraining/
+│   ├── semi_supervised.py    # Self-supervised pretraining
+│   └── contrastive.py        # Contrastive pretraining
+├── finetuning/
+│   └── finetune.py           # Fine-tune on labelled toxicity endpoints
+├── evaluation/
+│   ├── scaffold_split.py     # Scaffold-based train/test split
+│   └── metrics.py            # Accuracy, AUC, per-endpoint results
+├── checkpoints/              # Saved model weights (not committed to git)
+└── api/
+    └── serve.py              # FastAPI endpoint — serves predictions to frontend
+```
+
+## Running the model
+
+```bash
+pip install -r requirements.txt
+
+# Pretrain
+python pretraining/semi_supervised.py
+
+# Fine-tune
+python finetuning/finetune.py
+
+# Serve predictions to frontend
+python api/serve.py
+```
+
+## API output format
+
+The `serve.py` endpoint returns predictions in the `ProToxPrediction` format defined in `docs/schema.md`. This ensures the frontend can swap between ProTox-II and our model without any code changes.
+
+```json
+{
+  "smiles": "...",
+  "ld50": 200,
+  "toxicity_class": 3,
+  "toxicity_class_label": "Toxic",
+  "endpoints": {
+    "hepatotoxicity": true,
+    "nephrotoxicity": false
+  }
+}
+```
