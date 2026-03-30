@@ -139,11 +139,10 @@ Stream branches for bigger parallel work:
 - `stream/model`
 - `stream/ui`
 
-## Team — Cognito
+## Team for API/UI
 
 | Name | Stream |
 |---|---|
-| Melissa | UI + integration |
-| Ethan | Model |
-| Daisy | Database / data |
-| Groups A/B | Curated mechanism data |
+| Daisy | API/UI |
+| Melissa | UI/API |
+
