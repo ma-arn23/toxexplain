@@ -11,9 +11,9 @@ from pydantic.alias_generators import to_camel
 from typing import Literal, Optional
 
 
-# ===========================================================================
+
 # INTERNAL MODELS — used inside the pipeline, not returned to frontend
-# ===========================================================================
+
 
 class QueryInput(BaseModel):
     """The SMILES string submitted by the user via the frontend."""
@@ -64,9 +64,8 @@ class EvidenceItem(BaseModel):
     confidence: str
 
 
-# ===========================================================================
 # RESPONSE MODELS — camelCase JSON matching frontend's ResultsPageData
-# ===========================================================================
+
 # These mirror src/app/types/explainability.ts in the frontend repo exactly.
 
 class _CamelModel(BaseModel):
