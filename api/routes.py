@@ -15,9 +15,7 @@ from api.services.orchestrator import build_results_page_data
 router = APIRouter(prefix="/api", tags=["ToxExplain"])
 
 
-# ---------------------------------------------------------------------------
 # Health check
-# ---------------------------------------------------------------------------
 
 @router.get("/health")
 async def health_check():
@@ -25,9 +23,9 @@ async def health_check():
     return {"status": "ok"}
 
 
-# ---------------------------------------------------------------------------
+
 # Frontend-facing results endpoint
-# ---------------------------------------------------------------------------
+
 
 @router.get("/results", response_model=ResultsPageData)
 async def get_results(
