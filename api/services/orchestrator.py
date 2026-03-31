@@ -21,9 +21,9 @@ from api.services.mechanism_service import lookup_mechanisms
 from api.services.llm_service import generate_explanation
 
 
-# ---------------------------------------------------------------------------
+
 # Mapping from ProTox toxicity class (1-6) to risk label + score
-# ---------------------------------------------------------------------------
+
 
 _CLASS_TO_RISK = {
     1: ("Fatal", 0.95),
@@ -81,7 +81,7 @@ async def build_results_page_data(smiles: str) -> ResultsPageData:
         prediction.toxicity_class, ("Unknown", 0.5)
     )
 
-    # --- Endpoints (convert boolean flags → scored list) ---
+    # Endpoints (convert boolean flags → scored list) 
     endpoint_data = prediction.endpoints.model_dump()
     # Assign plausible scores: active endpoints get a score, inactive get low
     endpoint_scores = {
@@ -100,7 +100,7 @@ async def build_results_page_data(smiles: str) -> ResultsPageData:
         for _, (display_name, score) in endpoint_scores.items()
     ]
 
-    # --- Primary targets & off-targets (from mechanism records) ---
+    #  Primary targets & off-targets (from mechanism records) 
     primary_targets: list[TargetRecord] = []
     off_targets: list[TargetRecord] = []
     seen_primary: set[str] = set()
@@ -127,7 +127,7 @@ async def build_results_page_data(smiles: str) -> ResultsPageData:
                     provenance=provenance,
                 ))
 
-    # --- Mechanisms & pathways (from mechanism records) ---
+    # Mechanisms & pathways (from mechanism records) 
     seen_mechanisms: set[str] = set()
     mechanism_texts: list[TextEvidenceRecord] = []
     for mech in mechanisms:
@@ -150,7 +150,7 @@ async def build_results_page_data(smiles: str) -> ResultsPageData:
                     text=pw, provenance=provenance
                 ))
 
-    # --- Mechanistic risks (combine endpoint flags + mechanism records) ---
+    # Mechanistic risks (combine endpoint flags + mechanism records) 
     mechanistic_risks: list[MechanisticRisk] = []
 
     for mech in mechanisms:
@@ -176,7 +176,7 @@ async def build_results_page_data(smiles: str) -> ResultsPageData:
                 related_pathways=list(mech.pathways),
             ))
 
-    # --- Adverse events (from evidence items) ---
+    # Adverse events (from evidence items) 
     adverse_events: list[AdverseEventRecord] = []
     for ev in evidence:
         provenance = "curated" if ev.group in ("A", "B") else "database"
@@ -187,7 +187,7 @@ async def build_results_page_data(smiles: str) -> ResultsPageData:
             provenance=provenance,
         ))
 
-    # --- Confidence metrics (stub: derived from data completeness) ---
+    #  Confidence metrics (stub: derived from data completeness) 
     model_conf = 0.78  # Placeholder — would come from ProTox confidence
     mech_support = min(1.0, len(mechanisms) * 0.3) if mechanisms else 0.2
     ev_strength = min(1.0, len([e for e in evidence if e.confidence == "high"]) * 0.25) if evidence else 0.15
