@@ -15,9 +15,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routes import router
 
 
-# ---------------------------------------------------------------------------
 # Create the FastAPI application
-# ---------------------------------------------------------------------------
+
 
 app = FastAPI(
     title="ToxExplain API",
@@ -30,9 +29,8 @@ app = FastAPI(
 )
 
 
-# ---------------------------------------------------------------------------
 # CORS configuration — allows the Vue frontend to call this API
-# ---------------------------------------------------------------------------
+
 # In production, replace the wildcard with the actual frontend origin,
 # e.g. ["http://localhost:5173", "https://toxexplain.example.com"]
 
@@ -45,8 +43,8 @@ app.add_middleware(
 )
 
 
-# ---------------------------------------------------------------------------
+
 # Include the API routes
-# ---------------------------------------------------------------------------
+
 
 app.include_router(router)
