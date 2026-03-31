@@ -11,9 +11,8 @@ from pathlib import Path
 from api.models import MechanismRecord, EvidenceItem
 
 
-# ---------------------------------------------------------------------------
 # Load the mechanism records once at module import time
-# ---------------------------------------------------------------------------
+
 
 _DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "mechanism_records.json"
 
