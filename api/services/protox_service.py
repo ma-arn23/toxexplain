@@ -1,5 +1,5 @@
 """
-protox_service.py — ProTox-II toxicity prediction service.
+protox_service.py — ProTox toxicity prediction service.
 
 This module handles communication with the ProTox-II web server.
 Currently returns STUB data so the API is runnable without external
@@ -9,9 +9,8 @@ dependencies. Replace the stub logic with real HTTP calls when ready.
 from api.models import ProToxPrediction, Endpoints
 
 
-# ---------------------------------------------------------------------------
 # GHS toxicity class labels (for converting class number → human label)
-# ---------------------------------------------------------------------------
+
 
 _CLASS_LABELS = {
     1: "Fatal",
@@ -32,14 +31,14 @@ async def get_protox_prediction(smiles: str) -> ProToxPrediction:
 
         async with httpx.AsyncClient() as client:
             response = await client.post(
-                "https://tox-new.charite.de/protox_II/api/predict",
+                "https://tox-new.charite.de/protox/api/predict",
                 json={"smiles": smiles},
             )
             data = response.json()
             return ProToxPrediction(**data)
     """
 
-    # --- STUB: Hardcoded prediction for development/testing ---
+    #  STUB: Hardcoded prediction for development/testing 
     # Returns plausible values so downstream services have data to work with.
     return ProToxPrediction(
         smiles=smiles,
