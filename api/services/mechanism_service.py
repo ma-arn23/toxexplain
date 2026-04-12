@@ -25,7 +25,13 @@ async def lookup_mechanisms(
     """
     Look up curated mechanism records that match the given SMILES string.
 
+<<<<<<< HEAD
     Currently does exact SMILES match.
+=======
+    Currently does exact SMILES match. Returns empty lists if no match is
+    found — callers must not assume returned data is specific to the queried
+    SMILES unless a match was found.
+>>>>>>> upstream/main
 
     Returns:
         A tuple of (mechanism_records, evidence_items) extracted from the data.
@@ -37,6 +43,7 @@ async def lookup_mechanisms(
 
     for entry in raw_data:
         if entry.get("smiles") == smiles:
+<<<<<<< HEAD
             entry_copy = dict(entry)
             raw_evidence = entry_copy.pop("evidence_items", [])
 
@@ -44,3 +51,14 @@ async def lookup_mechanisms(
             evidence_items.extend(EvidenceItem(**ev) for ev in raw_evidence)
 
     return mechanism_records, evidence_items
+=======
+            # Work on a copy so we don't mutate the loaded data
+            entry_copy = dict(entry)
+            raw_evidence = entry_copy.pop("evidence_items", [])
+            mechanism_records.append(MechanismRecord(**entry_copy))
+            evidence_items.extend(
+                EvidenceItem(**ev) for ev in raw_evidence
+            )
+
+    return mechanism_records, evidence_items
+>>>>>>> upstream/main
