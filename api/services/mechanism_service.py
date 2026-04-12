@@ -29,10 +29,9 @@ async def lookup_mechanisms(
     """
     Look up curated mechanism records that match the given SMILES string.
 
-    Currently does exact SMILES match. In the future you could:
-    - Use RDKit canonical SMILES for normalised comparison
-    - Do substructure search with RDKit
-    - Fall back to returning ALL records if no exact match (useful for demos)
+    Currently does exact SMILES match. Returns empty lists if no match is
+    found — callers must not assume returned data is specific to the queried
+    SMILES unless a match was found.
 
     Returns:
         A tuple of (mechanism_records, evidence_items) extracted from the data.
@@ -43,24 +42,11 @@ async def lookup_mechanisms(
     evidence_items: list[EvidenceItem] = []
 
     for entry in raw_data:
-        # --- Exact SMILES match ---
-        # For development/demo: if no exact match is found, we fall back to
-        # returning ALL records so there is always something to display.
         if entry.get("smiles") == smiles:
-            # Extract evidence items (stored inline in the JSON)
-            raw_evidence = entry.pop("evidence_items", [])
-
-            mechanism_records.append(MechanismRecord(**entry))
-            evidence_items.extend(
-                EvidenceItem(**ev) for ev in raw_evidence
-            )
-
-    # --- Fallback: if no exact match, return all records for demo purposes ---
-    if not mechanism_records:
-        raw_data = _load_mechanism_data()  # reload because we popped above
-        for entry in raw_data:
-            raw_evidence = entry.pop("evidence_items", [])
-            mechanism_records.append(MechanismRecord(**entry))
+            # Work on a copy so we don't mutate the loaded data
+            entry_copy = dict(entry)
+            raw_evidence = entry_copy.pop("evidence_items", [])
+            mechanism_records.append(MechanismRecord(**entry_copy))
             evidence_items.extend(
                 EvidenceItem(**ev) for ev in raw_evidence
             )
