@@ -58,3 +58,23 @@ ENV/
 # API keys / secrets
 secrets.json
 config.local.js
+
+# --- Mechanism curation pipeline (added April 2026) ---
+# Large data files - never commit
+drugbank.xml
+*.zip
+
+# Pipeline scratch outputs
+debug_DB*_response.txt
+llm_extraction_*.xlsx
+drug_ids_*.txt
+
+# Local backups
+*.backup.json
+*.backup.xlsx
+
+# Excel lock files
+~$*.xlsx
+
+# Local notes
+git_state.txt
