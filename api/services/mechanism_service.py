@@ -91,12 +91,12 @@ async def lookup_mechanisms(
 ) -> tuple[list[MechanismRecord], list[EvidenceItem]]:
     """
     Look up curated mechanism records that match the given SMILES string.
-
     Tries in order:
       1. Exact SMILES match against records
       2. SMILES index lookup (by drug_id)
       3. Canonical SMILES match via RDKit (if installed)
-      4. Fallback: return ALL records for demo purposes
+    Returns empty lists if no match is found.
+
 
     Returns:
         A tuple of (mechanism_records, evidence_items).
@@ -105,13 +105,8 @@ async def lookup_mechanisms(
 
     matched = _find_matching_entries(smiles, raw_data)
 
-    # Fallback: if no match, return all records for demo purposes
-    if not matched:
-        matched = _load_data()  # reload fresh copy
-
     mechanism_records: list[MechanismRecord] = []
     evidence_items: list[EvidenceItem] = []
-
     for entry in matched:
         # Pop evidence_items from a copy so we don't mutate the cache
         entry_copy = dict(entry)
@@ -153,3 +148,4 @@ def get_all_drug_names() -> list[dict]:
             "smiles": info["smiles"],
         })
     return sorted(drugs, key=lambda x: x["drug_name"])
+
