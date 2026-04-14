@@ -14,7 +14,21 @@
     "O=C1CCO1": "DB09348",
     "OC1=CC=C(Cl)C=C1": "DB13154",
     "CC(=O)NC1=CC(=CC=C1O)[As](O)(O)=O": "DB13268",
-    "OC(=O)COC1=NN(CC2=CC=CC=C2)C2=CC=CC=C12": "DB13501"
+    "OC(=O)COC1=NN(CC2=CC=CC=C2)C2=CC=CC=C12": "DB13501",
+    "[H][C@]12C[C@@H](OC(=O)C3=CC(OC)=C(OC)C(OC)=C3)[C@H](OC)[C@@H](C(=O)OC)[C@@]1([H])C[C@@]1([H])N(CCC3=C1NC1=C3C=CC(OC)=C1)C2": "DB00206",
+    "NC1=CC=C(C=C1)S(N)(=O)=O": "DB00259",
+    "OP(O)(=O)C(SC1=CC=C(Cl)C=C1)P(O)(O)=O": "DB01133",
+    "CCC1=NN(CCCN2CCN(CC2)C2=CC(Cl)=CC=C2)C(=O)N1CCOC1=CC=CC=C1": "DB01149",
+    "[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)[C@H](C(O)=O)C1=CSC=C1)C(O)=O": "DB01607",
+    "OC(=O)C1=C(I)C(NC(=O)CCCCC(=O)NC2=C(I)C=C(I)C(C(O)=O)=C2I)=C(I)C=C1I": "DB04711",
+    "CCN(CC)CCOCCOC(=O)C(CC)(CC)C1=CC=CC=C1": "DB04822",
+    "[H][C@@]1(CC[C@@H]([C@@H](C)O1)N(C)C)O[C@H]1\\C=C\\C=C\\C[C@@H](C)OC(=O)C[C@@H](O)[C@H](OC)[C@@H](O[C@]2([H])O[C@H](C)[C@@H](O[C@@]3([H])C[C@@](C)(O)[C@@H](O)[C@H](C)O3)[C@@H]([C@H]2O)N(C)C)[C@@H](CC=O)C[C@H]1C": "DB06145",
+    "CN(C)CCCN1C2=CC=CC=C2C(C)(C)C2=CC=CC=C12": "DB08996",
+    "[H][C@]12CN(C[C@]1([H])OCCN2)C1=C(F)C=C2C(=O)C(=CN(C3CC3)C2=C1C#N)C(O)=O": "DB09047",
+    "[H][C@@]12C[C@@]3([H])C(=C(O)[C@]1(O)C(=O)C(C(N)=O)=C(O)[C@H]2N(C)C)C(=O)C1=C(O)C=CC(Cl)=C1[C@@]3(C)O": "DB09093",
+    "[H][C@]12C[C@@H](CN(CCC)[C@]1([H])CC1=CC=CC(O)=C1C2)NS(=O)(=O)N(CC)CC": "DB09097",
+    "COC1=CC=C(O)C=C1": "DB09516",
+    "CO[C@H]1\\C=C\\O[C@@]2(C)OC3=C(C)C(O)=C4C(O)=C(NC(=O)\\C(C)=C/C=C/[C@H](C)[C@H](O)[C@@H](C)[C@@H](O)[C@@H](C)[C@H](OC(C)=O)[C@@H]1C)C=C(O)C4=C3C2=O": "DB11753"
   },
   "by_drug_id": {
     "troglitazone": {
@@ -76,6 +90,62 @@
     "DB13501": {
       "drug_name": "Bendazac",
       "smiles": "OC(=O)COC1=NN(CC2=CC=CC=C2)C2=CC=CC=C12"
+    },
+    "DB00206": {
+      "drug_name": "Reserpine",
+      "smiles": "[H][C@]12C[C@@H](OC(=O)C3=CC(OC)=C(OC)C(OC)=C3)[C@H](OC)[C@@H](C(=O)OC)[C@@]1([H])C[C@@]1([H])N(CCC3=C1NC1=C3C=CC(OC)=C1)C2"
+    },
+    "DB00259": {
+      "drug_name": "Sulfanilamide",
+      "smiles": "NC1=CC=C(C=C1)S(N)(=O)=O"
+    },
+    "DB01133": {
+      "drug_name": "Tiludronic acid",
+      "smiles": "OP(O)(=O)C(SC1=CC=C(Cl)C=C1)P(O)(O)=O"
+    },
+    "DB01149": {
+      "drug_name": "Nefazodone",
+      "smiles": "CCC1=NN(CCCN2CCN(CC2)C2=CC(Cl)=CC=C2)C(=O)N1CCOC1=CC=CC=C1"
+    },
+    "DB01607": {
+      "drug_name": "Ticarcillin",
+      "smiles": "[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)[C@H](C(O)=O)C1=CSC=C1)C(O)=O"
+    },
+    "DB04711": {
+      "drug_name": "Iodipamide",
+      "smiles": "OC(=O)C1=C(I)C(NC(=O)CCCCC(=O)NC2=C(I)C=C(I)C(C(O)=O)=C2I)=C(I)C=C1I"
+    },
+    "DB04822": {
+      "drug_name": "Oxeladin",
+      "smiles": "CCN(CC)CCOCCOC(=O)C(CC)(CC)C1=CC=CC=C1"
+    },
+    "DB06145": {
+      "drug_name": "Spiramycin",
+      "smiles": "[H][C@@]1(CC[C@@H]([C@@H](C)O1)N(C)C)O[C@H]1\\C=C\\C=C\\C[C@@H](C)OC(=O)C[C@@H](O)[C@H](OC)[C@@H](O[C@]2([H])O[C@H](C)[C@@H](O[C@@]3([H])C[C@@](C)(O)[C@@H](O)[C@H](C)O3)[C@@H]([C@H]2O)N(C)C)[C@@H](CC=O)C[C@H]1C"
+    },
+    "DB08996": {
+      "drug_name": "Dimetacrine",
+      "smiles": "CN(C)CCCN1C2=CC=CC=C2C(C)(C)C2=CC=CC=C12"
+    },
+    "DB09047": {
+      "drug_name": "Finafloxacin",
+      "smiles": "[H][C@]12CN(C[C@]1([H])OCCN2)C1=C(F)C=C2C(=O)C(=CN(C3CC3)C2=C1C#N)C(O)=O"
+    },
+    "DB09093": {
+      "drug_name": "Chlortetracycline",
+      "smiles": "[H][C@@]12C[C@@]3([H])C(=C(O)[C@]1(O)C(=O)C(C(N)=O)=C(O)[C@H]2N(C)C)C(=O)C1=C(O)C=CC(Cl)=C1[C@@]3(C)O"
+    },
+    "DB09097": {
+      "drug_name": "Quinagolide",
+      "smiles": "[H][C@]12C[C@@H](CN(CCC)[C@]1([H])CC1=CC=CC(O)=C1C2)NS(=O)(=O)N(CC)CC"
+    },
+    "DB09516": {
+      "drug_name": "Mequinol",
+      "smiles": "COC1=CC=C(O)C=C1"
+    },
+    "DB11753": {
+      "drug_name": "Rifamycin",
+      "smiles": "CO[C@H]1\\C=C\\O[C@@]2(C)OC3=C(C)C(O)=C4C(O)=C(NC(=O)\\C(C)=C/C=C/[C@H](C)[C@H](O)[C@@H](C)[C@@H](O)[C@@H](C)[C@H](OC(C)=O)[C@@H]1C)C=C(O)C4=C3C2=O"
     }
   },
   "by_drug_name": {
@@ -93,6 +163,20 @@
     "propiolactone": "DB09348",
     "parachlorophenol": "DB13154",
     "acetarsol": "DB13268",
-    "bendazac": "DB13501"
+    "bendazac": "DB13501",
+    "reserpine": "DB00206",
+    "sulfanilamide": "DB00259",
+    "tiludronic acid": "DB01133",
+    "nefazodone": "DB01149",
+    "ticarcillin": "DB01607",
+    "iodipamide": "DB04711",
+    "oxeladin": "DB04822",
+    "spiramycin": "DB06145",
+    "dimetacrine": "DB08996",
+    "finafloxacin": "DB09047",
+    "chlortetracycline": "DB09093",
+    "quinagolide": "DB09097",
+    "mequinol": "DB09516",
+    "rifamycin": "DB11753"
   }
 }

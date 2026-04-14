@@ -1038,5 +1038,953 @@
         "confidence": "high"
       }
     ]
+  },
+  {
+    "drug_name": "Reserpine",
+    "drug_id": "DB00206",
+    "smiles": "[H][C@]12C[C@@H](OC(=O)C3=CC(OC)=C(OC)C(OC)=C3)[C@H](OC)[C@@H](C(=O)OC)[C@@]1([H])C[C@@]1([H])N(CCC3=C1NC1=C3C=CC(OC)=C1)C2",
+    "primary_targets": [
+      "Synaptic vesicular amine transporter"
+    ],
+    "off_targets": [
+      "Chromaffin granule amine transporter",
+      "Baculoviral IAP repeat-containing protein 5",
+      "Cytochrome P450 3A5"
+    ],
+    "pathways": [
+      "Inhibition of vesicular amine transport"
+    ],
+    "organ_systems": [
+      "hepatic",
+      "neurologic",
+      "reproductive"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB00206"
+    ],
+    "evidence_items": [
+      {
+        "label": "Synaptic vesicular amine transporter \u2014 inhibits (primary)",
+        "source": "DrugBank: DB00206",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Chromaffin granule amine transporter \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB00206",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Baculoviral IAP repeat-containing protein 5 \u2014 binds (off_target)",
+        "source": "DrugBank: DB00206",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Cytochrome P450 3A5 \u2014 induces (secondary)",
+        "source": "DrugBank: DB00206",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Inhibition of vesicular amine transport",
+        "source": "DrugBank: DB00206",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Carcinogenicity \u2014 other (severe)",
+        "source": "DrugBank: DB00206",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Reproductive harm \u2014 reproductive (severe)",
+        "source": "DrugBank: DB00206",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "drug_name": "Sulfanilamide",
+    "drug_id": "DB00259",
+    "smiles": "NC1=CC=C(C=C1)S(N)(=O)=O",
+    "primary_targets": [
+      "Dihydropteroate synthase"
+    ],
+    "off_targets": [],
+    "pathways": [
+      "Inhibition of folic acid synthesis"
+    ],
+    "organ_systems": [
+      "dermatologic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB00259"
+    ],
+    "evidence_items": [
+      {
+        "label": "Dihydropteroate synthase \u2014 inhibits (primary)",
+        "source": "DrugBank: DB00259",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Inhibition of folic acid synthesis",
+        "source": "DrugBank: DB00259",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "itching, burning, skin rash, redness, swelling \u2014 dermatologic (mild)",
+        "source": "DrugBank: DB00259",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "cancer of the thyroid gland \u2014 other (severe)",
+        "source": "DrugBank: DB00259",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "drug_name": "Tiludronic acid",
+    "drug_id": "DB01133",
+    "smiles": "OP(O)(=O)C(SC1=CC=C(Cl)C=C1)P(O)(O)=O",
+    "primary_targets": [
+      "Hydroxylapatite"
+    ],
+    "off_targets": [
+      "V-ATPase",
+      "Protein-tyrosine-phosphatase"
+    ],
+    "pathways": [
+      "Osteoclast inactivation"
+    ],
+    "organ_systems": [
+      "gastrointestinal",
+      "renal"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB01133"
+    ],
+    "evidence_items": [
+      {
+        "label": "Hydroxylapatite \u2014 binds (primary)",
+        "source": "DrugBank: DB01133",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "V-ATPase \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB01133",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Protein-tyrosine-phosphatase \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB01133",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Osteoclast inactivation",
+        "source": "DrugBank: DB01133",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Hypocalcemia \u2014 other (unknown)",
+        "source": "DrugBank: DB01133",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Acute renal failure \u2014 renal (fatal)",
+        "source": "DrugBank: DB01133",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Upper GI mucosal irritation/ulcers \u2014 gastrointestinal (moderate)",
+        "source": "DrugBank: DB01133",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Nefazodone",
+    "drug_id": "DB01149",
+    "smiles": "CCC1=NN(CCCN2CCN(CC2)C2=CC(Cl)=CC=C2)C(=O)N1CCOC1=CC=CC=C1",
+    "primary_targets": [
+      "5-hydroxytryptamine receptor 2A",
+      "5-hydroxytryptamine receptor 2C",
+      "Sodium-dependent serotonin transporter",
+      "5-hydroxytryptamine receptor 1A",
+      "Sodium-dependent noradrenaline transporter"
+    ],
+    "off_targets": [
+      "Cytochrome P450 3A4"
+    ],
+    "pathways": [
+      "Hepatic injury"
+    ],
+    "organ_systems": [
+      "hepatic",
+      "neurologic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB01149"
+    ],
+    "evidence_items": [
+      {
+        "label": "5-hydroxytryptamine receptor 2A \u2014 antagonist (primary)",
+        "source": "DrugBank: DB01149",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "5-hydroxytryptamine receptor 2C \u2014 antagonist (primary)",
+        "source": "DrugBank: DB01149",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Sodium-dependent serotonin transporter \u2014 inhibits (primary)",
+        "source": "DrugBank: DB01149",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "5-hydroxytryptamine receptor 1A \u2014 antagonist (primary)",
+        "source": "DrugBank: DB01149",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Sodium-dependent noradrenaline transporter \u2014 inhibits (primary)",
+        "source": "DrugBank: DB01149",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Cytochrome P450 3A4 \u2014 inhibits (secondary)",
+        "source": "DrugBank: DB01149",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Hepatic injury",
+        "source": "DrugBank: DB01149",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "hepatic failure \u2014 hepatic (fatal)",
+        "source": "DrugBank: DB01149",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "sedation \u2014 neurologic (mild)",
+        "source": "DrugBank: DB01149",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Ticarcillin",
+    "drug_id": "DB01607",
+    "smiles": "[H][C@]12SC(C)(C)[C@@H](N1C(=O)[C@H]2NC(=O)[C@H](C(O)=O)C1=CSC=C1)C(O)=O",
+    "primary_targets": [
+      "Penicillin binding protein 2a"
+    ],
+    "off_targets": [],
+    "pathways": [
+      "Inhibition of peptidoglycan cross-linking"
+    ],
+    "organ_systems": [
+      "neurologic",
+      "renal"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB01607"
+    ],
+    "evidence_items": [
+      {
+        "label": "Penicillin binding protein 2a \u2014 inhibits (primary)",
+        "source": "DrugBank: DB01607",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Inhibition of peptidoglycan cross-linking",
+        "source": "DrugBank: DB01607",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Neurotoxic reactions \u2014 neurologic (unknown)",
+        "source": "DrugBank: DB01607",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "impaired renal function \u2014 increases risk",
+        "source": "DrugBank: DB01607",
+        "origin": "risk modifier analysis",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Iodipamide",
+    "drug_id": "DB04711",
+    "smiles": "OC(=O)C1=C(I)C(NC(=O)CCCCC(=O)NC2=C(I)C=C(I)C(C(O)=O)=C2I)=C(I)C=C1I",
+    "primary_targets": [],
+    "off_targets": [
+      "Albumin"
+    ],
+    "pathways": [
+      "cytotoxicity to renal cells"
+    ],
+    "organ_systems": [
+      "renal"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB04711"
+    ],
+    "evidence_items": [
+      {
+        "label": "Albumin \u2014 binds (off_target)",
+        "source": "DrugBank: DB04711",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "cytotoxicity to renal cells",
+        "source": "DrugBank: DB04711",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "renal cell apoptosis \u2014 renal (severe)",
+        "source": "DrugBank: DB04711",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Oxeladin",
+    "drug_id": "DB04822",
+    "smiles": "CCN(CC)CCOCCOC(=O)C(CC)(CC)C1=CC=CC=C1",
+    "primary_targets": [],
+    "off_targets": [],
+    "pathways": [],
+    "organ_systems": [],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB04822"
+    ],
+    "evidence_items": [
+      {
+        "label": "carcinogenicity \u2014 other (fatal)",
+        "source": "DrugBank: DB04822",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Spiramycin",
+    "drug_id": "DB06145",
+    "smiles": "[H][C@@]1(CC[C@@H]([C@@H](C)O1)N(C)C)O[C@H]1\\C=C\\C=C\\C[C@@H](C)OC(=O)C[C@@H](O)[C@H](OC)[C@@H](O[C@]2([H])O[C@H](C)[C@@H](O[C@@]3([H])C[C@@](C)(O)[C@@H](O)[C@H](C)O3)[C@@H]([C@H]2O)N(C)C)[C@@H](CC=O)C[C@H]1C",
+    "primary_targets": [
+      "Large ribosomal subunit protein uL3"
+    ],
+    "off_targets": [],
+    "pathways": [
+      "Protein synthesis inhibition"
+    ],
+    "organ_systems": [
+      "cardiac",
+      "gastrointestinal",
+      "hepatic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB06145"
+    ],
+    "evidence_items": [
+      {
+        "label": "Large ribosomal subunit protein uL3 \u2014 inhibits (primary)",
+        "source": "DrugBank: DB06145",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Protein synthesis inhibition",
+        "source": "DrugBank: DB06145",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "QT prolongation \u2014 cardiac (severe)",
+        "source": "DrugBank: DB06145",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Cholestatic hepatitis \u2014 hepatic (severe)",
+        "source": "DrugBank: DB06145",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Acute colitis \u2014 gastrointestinal (moderate)",
+        "source": "DrugBank: DB06145",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Intestinal injury \u2014 gastrointestinal (moderate)",
+        "source": "DrugBank: DB06145",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Ulcerated esophagitis \u2014 gastrointestinal (moderate)",
+        "source": "DrugBank: DB06145",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Dimetacrine",
+    "drug_id": "DB08996",
+    "smiles": "CN(C)CCCN1C2=CC=CC=C2C(C)(C)C2=CC=CC=C12",
+    "primary_targets": [
+      "Acetylcholinesterase"
+    ],
+    "off_targets": [],
+    "pathways": [
+      "Cardiac toxicity"
+    ],
+    "organ_systems": [
+      "cardiac",
+      "neurologic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB08996"
+    ],
+    "evidence_items": [
+      {
+        "label": "Acetylcholinesterase \u2014 antagonist (primary)",
+        "source": "DrugBank: DB08996",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Cardiac toxicity",
+        "source": "DrugBank: DB08996",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Cardiac toxicity \u2014 cardiac (severe)",
+        "source": "DrugBank: DB08996",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Finafloxacin",
+    "drug_id": "DB09047",
+    "smiles": "[H][C@]12CN(C[C@]1([H])OCCN2)C1=C(F)C=C2C(=O)C(=CN(C3CC3)C2=C1C#N)C(O)=O",
+    "primary_targets": [
+      "DNA gyrase subunit A",
+      "DNA topoisomerase 4 subunit A"
+    ],
+    "off_targets": [
+      "DNA topoisomerase 2-alpha"
+    ],
+    "pathways": [
+      "Genotoxicity/Clastogenicity",
+      "Sperm toxicity"
+    ],
+    "organ_systems": [
+      "reproductive"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB09047"
+    ],
+    "evidence_items": [
+      {
+        "label": "DNA gyrase subunit A \u2014 inhibits (primary)",
+        "source": "DrugBank: DB09047",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "DNA topoisomerase 4 subunit A \u2014 inhibits (primary)",
+        "source": "DrugBank: DB09047",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "DNA topoisomerase 2-alpha \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB09047",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Genotoxicity/Clastogenicity",
+        "source": "DrugBank: DB09047",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Sperm toxicity",
+        "source": "DrugBank: DB09047",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "infertility \u2014 reproductive (moderate)",
+        "source": "DrugBank: DB09047",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Chlortetracycline",
+    "drug_id": "DB09093",
+    "smiles": "[H][C@@]12C[C@@]3([H])C(=C(O)[C@]1(O)C(=O)C(C(N)=O)=C(O)[C@H]2N(C)C)C(=O)C1=C(O)C=CC(Cl)=C1[C@@]3(C)O",
+    "primary_targets": [
+      "16S ribosomal RNA",
+      "Small ribosomal subunit proteins (uS3, uS8, uS19, uS14, uS7)"
+    ],
+    "off_targets": [
+      "ADP-ribosylation factor 1",
+      "Catalase",
+      "Ephrin type-B receptor 1",
+      "Pancreatic triacylglycerol lipase",
+      "Protein-arginine deiminase type-4"
+    ],
+    "pathways": [
+      "Bacterial protein synthesis inhibition"
+    ],
+    "organ_systems": [
+      "dermatologic",
+      "gastrointestinal",
+      "hepatic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB09093"
+    ],
+    "evidence_items": [
+      {
+        "label": "16S ribosomal RNA \u2014 inhibits (primary)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Small ribosomal subunit proteins (uS3, uS8, uS19, uS14, uS7) \u2014 inhibits (primary)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "ADP-ribosylation factor 1 \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Catalase \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Ephrin type-B receptor 1 \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Pancreatic triacylglycerol lipase \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Protein-arginine deiminase type-4 \u2014 inhibits (off_target)",
+        "source": "DrugBank: DB09093",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Bacterial protein synthesis inhibition",
+        "source": "DrugBank: DB09093",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Gastrointestinal disturbances \u2014 gastrointestinal (mild)",
+        "source": "DrugBank: DB09093",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Dental hypoplasia and staining \u2014 dermatologic (moderate)",
+        "source": "DrugBank: DB09093",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Bone deformity \u2014 other (moderate)",
+        "source": "DrugBank: DB09093",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Hepatotoxicity \u2014 hepatic (severe)",
+        "source": "DrugBank: DB09093",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Pregnancy \u2014 increases risk",
+        "source": "DrugBank: DB09093",
+        "origin": "risk modifier analysis",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Quinagolide",
+    "drug_id": "DB09097",
+    "smiles": "[H][C@]12C[C@@H](CN(CCC)[C@]1([H])CC1=CC=CC(O)=C1C2)NS(=O)(=O)N(CC)CC",
+    "primary_targets": [
+      "D(2) dopamine receptor"
+    ],
+    "off_targets": [
+      "D(1) dopamine receptor"
+    ],
+    "pathways": [
+      "D2 receptor agonism"
+    ],
+    "organ_systems": [
+      "cardiac",
+      "gastrointestinal"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB09097"
+    ],
+    "evidence_items": [
+      {
+        "label": "D(2) dopamine receptor \u2014 activates (primary)",
+        "source": "DrugBank: DB09097",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "D(1) dopamine receptor \u2014 binds (off_target)",
+        "source": "DrugBank: DB09097",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "D2 receptor agonism",
+        "source": "DrugBank: DB09097",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "nausea \u2014 gastrointestinal (mild)",
+        "source": "DrugBank: DB09097",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "orthostatic hypotension \u2014 cardiac (moderate)",
+        "source": "DrugBank: DB09097",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "carcinogenic potential \u2014 other (unknown)",
+        "source": "DrugBank: DB09097",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "drug_name": "Mequinol",
+    "drug_id": "DB09516",
+    "smiles": "COC1=CC=C(O)C=C1",
+    "primary_targets": [
+      "Tyrosinase"
+    ],
+    "off_targets": [],
+    "pathways": [
+      "Melanocytotoxicity via quinone formation",
+      "DNA inhibition"
+    ],
+    "organ_systems": [
+      "dermatologic",
+      "hematologic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB09516"
+    ],
+    "evidence_items": [
+      {
+        "label": "Tyrosinase \u2014 inhibits (primary)",
+        "source": "DrugBank: DB09516",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Melanocytotoxicity via quinone formation",
+        "source": "DrugBank: DB09516",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "DNA inhibition",
+        "source": "DrugBank: DB09516",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Erythema (marked redness) \u2014 dermatologic (mild)",
+        "source": "DrugBank: DB09516",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Peeling of skin \u2014 dermatologic (mild)",
+        "source": "DrugBank: DB09516",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Skin discomfort \u2014 dermatologic (mild)",
+        "source": "DrugBank: DB09516",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Hypopigmentation \u2014 dermatologic (moderate)",
+        "source": "DrugBank: DB09516",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Excessive topical application \u2014 increases risk",
+        "source": "DrugBank: DB09516",
+        "origin": "risk modifier analysis",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "drug_name": "Rifamycin",
+    "drug_id": "DB11753",
+    "smiles": "CO[C@H]1\\C=C\\O[C@@]2(C)OC3=C(C)C(O)=C4C(O)=C(NC(=O)\\C(C)=C/C=C/[C@H](C)[C@H](O)[C@@H](C)[C@@H](O)[C@@H](C)[C@H](OC(C)=O)[C@@H]1C)C=C(O)C4=C3C2=O",
+    "primary_targets": [
+      "DNA-directed RNA polymerase subunit beta",
+      "DNA-directed RNA polymerase subunit alpha",
+      "DNA-directed RNA polymerase subunit beta'"
+    ],
+    "off_targets": [
+      "Cytochrome P450 3A4"
+    ],
+    "pathways": [
+      "Inhibition of RNA synthesis",
+      "Oxidative stress/Glutathione depletion"
+    ],
+    "organ_systems": [
+      "hepatic"
+    ],
+    "withdrawal_reason": "",
+    "source": "Group B",
+    "references": [
+      "DrugBank: DB11753"
+    ],
+    "evidence_items": [
+      {
+        "label": "DNA-directed RNA polymerase subunit beta \u2014 binds (primary)",
+        "source": "DrugBank: DB11753",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "DNA-directed RNA polymerase subunit alpha \u2014 binds (primary)",
+        "source": "DrugBank: DB11753",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "DNA-directed RNA polymerase subunit beta' \u2014 binds (primary)",
+        "source": "DrugBank: DB11753",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Cytochrome P450 3A4 \u2014 modulates (off_target)",
+        "source": "DrugBank: DB11753",
+        "origin": "target annotation",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "Inhibition of RNA synthesis",
+        "source": "DrugBank: DB11753",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "high"
+      },
+      {
+        "label": "Oxidative stress/Glutathione depletion",
+        "source": "DrugBank: DB11753",
+        "origin": "mechanism extraction",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "hepatotoxicity \u2014 hepatic (unknown)",
+        "source": "DrugBank: DB11753",
+        "origin": "adverse event report",
+        "group": "B",
+        "confidence": "medium"
+      },
+      {
+        "label": "intravenous administration \u2014 increases risk",
+        "source": "DrugBank: DB11753",
+        "origin": "risk modifier analysis",
+        "group": "B",
+        "confidence": "high"
+      }
+    ]
   }
 ]
